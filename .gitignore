@@ -40,6 +40,11 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
+allure-report/**/
+allure-results/
+
+#vscode
+.vscode/*
 
 # TypeScript v1 declaration files
 typings/
