@@ -1,7 +1,6 @@
-const { When } = require("@wdio/cucumber-framework");
+import { When } from "@wdio/cucumber-framework";
+import searchItem from "../support/actions/searchItem";
 
 When('I search for {string}', async (searchKeyWord) => {
-   const element = $("#gh-ac");
-   await element.setValue(searchKeyWord);
-   (await $("#gh-btn")).click();
+    await searchItem(searchKeyWord, $("#gh-ac"), $("#gh-btn"));
   });
