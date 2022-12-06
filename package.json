@@ -16,7 +16,8 @@
         "wdio-wait-for": "^3.0.0"
     },
     "scripts": {
-        "wdio": "wdio run wdio.conf.js"
+        "wdio": "wdio run wdio.conf.js",
+        "open_report": "npx allure open ./allure-report"
     },
     "dependencies": {
         "allure-commandline": "^2.20.1"
