@@ -1,5 +1,6 @@
-const { Given } = require("@wdio/cucumber-framework");
+import { Given } from "@wdio/cucumber-framework";
+import goToUrl from "../support/actions/goToUrl";
 
 Given('I opened ebay', async () => {
-    browser.url("/");
+   await goToUrl("/")
   });
