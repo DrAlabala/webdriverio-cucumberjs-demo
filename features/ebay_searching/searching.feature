@@ -4,4 +4,6 @@ As a user when I search for specific item at ebay I want to see the search resul
 Background: Open ebay
     Given I opened ebay
 
-
+Scenario: Search for an item
+    When  I search for "headphones"
+    Then  I see the search results
