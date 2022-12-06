@@ -1,6 +1,7 @@
 const { When } = require("@wdio/cucumber-framework");
 
-When('I search for {string}', function (string) {
-    // Write code here that turns the phrase above into concrete actions
-    return 'pending';
+When('I search for {string}', async (searchKeyWord) => {
+   const element = $("#gh-ac");
+   await element.setValue(searchKeyWord);
+   (await $("#gh-btn")).click();
   });

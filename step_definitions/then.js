@@ -1,6 +1,5 @@
 const { Then } = require("@wdio/cucumber-framework");
 
-Then('I see the search results', function () {
-    // Write code here that turns the phrase above into concrete actions
-    return 'pending';
+Then('I see the search results', async () => {
+    await expect($$("#srp-river-results").length).not.toBe(0);
   });
