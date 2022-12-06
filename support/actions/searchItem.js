@@ -1,4 +1,5 @@
-export default async (searchKeyWord, searchField, searchButton) => {
-    await searchField.setValue(searchKeyWord);
-    await searchButton.click();
+import homePage from "../../page_objects/homePage";
+
+export default  async searchForItem => {
+   await homePage.search(searchForItem);
 }
