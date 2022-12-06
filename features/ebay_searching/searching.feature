@@ -6,4 +6,4 @@ Background: Open ebay
 
 Scenario: Search for an item
     When  I search for "headphones"
-    Then  I see the search results
+    Then  I should see the results
